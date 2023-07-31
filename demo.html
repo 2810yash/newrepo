@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        AICTE Internship Enterprise Portal - Learning by doing. 1 Crore Internships by 2025
+    </title>
+    <link rel="shortcut icon" href="../assets/images3/fevicon.png">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <!-- <link rel="stylesheet" href="../assets/plugins/jqvmap/jqvmap.min.css"> -->
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../assets/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <!-- <link rel="stylesheet" href="../assets/plugins/daterangepicker/daterangepicker.css"> -->
+    <!-- summernote -->
+    <link rel="stylesheet" href="../assets/plugins/summernote/summernote-bs4.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js">
+    </script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/js/validate-form.js"></script>
+    <script src="../assets/js/cities.js"></script>
+    <script src="../assets/js/validate.js"></script>
+    <script src="../assets/js/course.js"></script>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <!-- Left navbar links -->
+            <!-- <b>Welcome:</b>
+           <b style= "margin-left:10px">Email:yash2810203@gmail.com</b> -->
+
+
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+
+
+                <div class="form-group" style="margin-right:10px;margin-top:7px">
+                </div>
+                <div class="form-group" style="margin-right:10px;margin-top:7px">
+
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <aside style="background-image: -webkit-linear-gradient(47deg, rgb(238, 130, 25) 0px, rgb(239, 69, 89) 100%);"
+            class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <img src="../assets/images3/internshiplogo.png" style="width:250px" alt="User Image">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <p class="text-light font-weight-bold">
+                        Welcome: YASH </p>
+                </div>
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <p class="text-light font-weight-bold">
+                        Email: yash2810203@gmail.com </p>
+                </div>
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column active" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="./index_dashboard.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p class="text-light font-weight-bold">Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./user_profile_student.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Profile
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./manage_leave.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Manage Leave
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./manage-report.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Manage Project
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./offer.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Application Management
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./interview_student.php?level=1" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Private Internships
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./interview_student.php?level=2" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Government Internships
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./nhai_internships.php?level=2" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    NHAI Internships
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./gig_management.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Gig Management (AMRUT)
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./solutions.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Problem Statements
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./logout.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Logout
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../index.php" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p class="text-light font-weight-bold">
+                                    Go to Main Page
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <!-- /.row -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Dashboard</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <!--  <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    </ol> -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <center>
+                        <a href="./neat_register.php" target="_blank">
+                            <h2 style="color:red">Click Here For Neat Registration</h2>
+                        </a>
+                    </center>
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>2</h3>
+                                    <h4><b>Internships Applied</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-bag"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Shortlisted</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <!--                     <a href="./industry_problems.php" class="small-box-footer">More info <i
+                            class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Interview Calls</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-stats-bars"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Selected</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <!--                         <a href="./industry_problems.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Completed</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Gig Applied</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Connections Verified</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>0</h3>
+                                    <h4><b>Connections Pending for Verification</b></h4>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <!--                         <a href="./internships.php" class="small-box-footer">More info <i
+                                class="fas fa-arrow-circle-right"></i></a> -->
+                            </div>
+                        </div>
+                        <!-- ./col -->
+
+                        <!-- ./col -->
+                    </div>
+
+
+                </div>
+
+                <!-- Main row -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Government Internship</h3>
+                                <div class="card-tools">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>ULB/Smart City Name</th>
+                                        <th>Internship Name</th>
+                                        <th>Date of Application</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Private Internships</h3>
+                                <div class="card-tools">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0" style="overflow:scroll">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Internship Name</th>
+                                        <th>Date of Application</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AIML VIRTUAL INTERNSHIP PROGRAM (COHORT – 4)</td>
+                                        <td>2022-10-12</td>
+                                        <td>Applied
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ROBOTIC PROCESS AUTOMATION (RPA) VIRTUAL INTERNSHIP PROGRAM (COHORT – 4)
+                                        </td>
+                                        <td>2022-10-12</td>
+                                        <td>Applied
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Rural Internship</h3>
+                                <div class="card-tools">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Rural Body Name</th>
+                                        <th>Internship Name</th>
+                                        <th>Date of Application</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <!-- Left col -->
+            <section class="col connectedSortable">
+                <!-- TO DO List -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="ion ion-clipboard mr-1"></i>
+                            To Do List
+                        </h3>
+                    </div>
+                    <!-- /.card-header -->
+
+                    <!-- /.card-body -->
+                </div>
+        </div>
+        <!-- /.card -->
+        </section>
+        <!-- /.Left col -->
+        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+        <!-- right col -->
+    </div>
+    <!-- /.row (main row) -->
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFKL14QWL5"></$
+            < script >
+            window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YFKL14QWL5');
+    </script>
+
+    <script src="../assets/js/autopopulate.js"></script>
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2020-2021 <a href="#!">AICTE</a>.</strong>
+        All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- <script>
+  $(document).keydown(function (event) {
+  if (event.keyCode == 123) { // Prevent F12
+      return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+      return false;
+  }
+});
+$(document).on("contextmenu", function (e) {        
+  e.preventDefault();
+});
+</script> -->
+    <!-- jQuery -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- <script>
+  $(document).keydown(function (event) {
+  if (event.keyCode == 123) { // Prevent F12
+      return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+      return false;
+  }
+});
+$(document).on("contextmenu", function (e) {        
+  e.preventDefault();
+});
+</script> -->
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../assets/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <!-- <script src="../assets/plugins/sparklines/sparkline.js"></script> -->
+    <!-- JQVMap -->
+    <!-- <script src="../assets/plugins/jqvmap/jquery.vmap.min.js"></script> -->
+    <!-- <script src="../assets/plugins/jqvmap/maps/jquery.vmap.usa.js"></script> -->
+    <!-- jQuery Knob Chart -->
+    <script src="../assets/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../assets/plugins/moment/moment.min.js"></script>
+    <script src="../assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="../assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../assets/dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../assets/dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../assets/dist/js/demo.js"></script>
+    <script src="../assets/plugins/chart.js/chart.min.js"></script>
+</body>
+
+</html>

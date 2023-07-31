@@ -1,0 +1,83 @@
+body {
+    background-image: linear-gradient(45deg, #0056d6, #c4e61e, #f77896);
+    animation-name: anime;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+    /* background-color: 
+            rgba(41, 161, 208, 0.842); 
+            color:  rgba(0, 0, 0, 0.978);
+            background-image:url(img1.jpg);
+            text-align: justify; */
+}
+
+@keyframes anime {
+    0% {
+        background-image: linear-gradient(45deg, #0056d6, #c4e61e, #f77896, #d7862d, #f5a958);
+    }
+
+    20% {
+        background-image: linear-gradient(45deg, #f5a958, #0056d6, #c4e61e, #f77896, #d7862d);
+    }
+
+    40% {
+        background-image: linear-gradient(45deg, #d7862d, #f5a958, #0056d6, #c4e61e, #f77896);
+    }
+
+    60% {
+        background-image: linear-gradient(45deg, #f77896, #d7862d, #f5a958, #0056d6, #c4e61e);
+    }
+
+    80% {
+        background-image: linear-gradient(45deg, #c4e61e, #f77896, #d7862d, #f5a958, #0056d6);
+    }
+    100%{
+        background-image: linear-gradient(45deg, #0056d6, #c4e61e, #f77896, #d7862d, #f5a958);
+    }
+}
+
+p {
+    white-space: pre-wrap;
+    /* max-width: 50px;
+    overflow: scroll; */
+}
+
+h2 {
+    text-shadow: 2px 2px 3px rgb(155, 94, 223);
+    text-align: center;
+}
+
+#hr {
+    width: 50px;
+    background-color: rgb(41, 161, 208, 0.842);
+}
+
+.border {
+    display: block;
+    border-radius: 50ch;
+    width: 8%;
+    margin: 50px auto;
+    position: sticky;
+    /* color: rgba(0,0,0,0); */
+}
+
+.insta {
+    margin-left: 43%;
+    width: 3%;
+}
+
+.fb {
+    width: 3%;
+}
+
+.linkdin {
+    width: 3%;
+}
+
+.gmail {
+    width: 4%;
+    margin-bottom: 0.4%;
+}
+
+.box {
+    background-color: rgb(111, 0, 255);
+}

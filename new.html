@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" style="text-align: center;">
+
+<head>
+    <link rel="shortcut icon" href="y.png" type="image/png">
+    <title>New</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+
+<body>
+
+    <style>
+        .move{
+            position: fixed;
+            right: 10px;
+        }
+    </style>
+
+    <a href="#bottom" style="text-align: right;" class="move">
+        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/96/sign-down-icon.png" alt="Go down"
+            id="top" height="40" class="move">
+    </a>
+    <h1>Hello</h1>
+    <h3>I am Yash </h3>
+
+    <img src="https://imgs.search.brave.com/arTrguHb89ZnnQozJ7yhB3SB-rNXHhahTPnWpHU-wag/rs:fit:817:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/UVBfaERKY3FsMGFz/NXhaRVBxczlRSGFF/VCZwaWQ9QXBp"
+        alt="success img" id="IMG"><br>
+    <a href="https://www.instagram.com/_ash_2810" target="_blank"><img src="/HTML/Img/Screenshot 2022-10-24 141637.jpg"
+            alt="My Insta profile" height="116"><br>Do follow this account👆</a><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid cupiditate rem minus ad? Repellendus reiciendis
+        error veritatis necessitatibus aperiam numquam a reprehenderit amet iste quae architecto labore quod, provident
+        perferendis esse, expedita neque eligendi dicta accusantium doloremque nobis delectus eveniet. Quisquam
+        voluptates nihil odit laborum, quaerat, commodi facilis ratione reiciendis corporis at illum deserunt nobis id
+        ab perspiciatis vel nisi in rerum? Vitae voluptates officia unde quaerat, dolore repellendus nam, exercitationem
+        natus soluta voluptatibus fugit harum amet obcaecati cupiditate commodi facere sapiente enim eos ab quidem
+        molestiae illum iusto autem? Porro, eveniet atque. Magni, minima dicta nam doloremque aspernatur ex magnam
+        laborum praesentium? Et aliquam dolorem adipisci at officiis? Vero earum iure eligendi consequuntur molestias
+        nulla enim cum deserunt voluptas excepturi! Dignissimos nihil, soluta rerum cum quasi enim inventore? Molestias
+        unde assumenda asperiores, maxime sint minima dolore deserunt quam dolor nam soluta tenetur voluptate vitae
+        rerum temporibus perspiciatis iusto cum id eaque expedita a quaerat ducimus? Rerum nobis itaque labore
+        consequuntur asperiores iure dolores similique voluptate suscipit? Iste laboriosam itaque temporibus dolore
+        possimus? Officia dicta, maxime doloribus omnis rem molestias accusantium quo, soluta aliquam obcaecati deleniti
+        adipisci facilis reprehenderit perferendis animi laboriosam iure dolorem et rerum! Exercitationem est magnam
+        totam.</p><br>
+
+    <!-- <a href="../ " target="_blank">folders</a><br> -->
+    <!-- <a href="../Our Project/project.cpp" target="_blank">code</a><br> -->
+    <style>
+        .decor {
+            color: rgb(0, 0, 0);
+            background-color: aquamarine;
+        }
+    </style>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/V1vaJnl4G3A" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XBjsXDRxQEs"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <br>
+    <hr style="background-color:red ;" size="3">
+    <table border="03" style="background: rgb(88, 87, 77);" width="100%">
+        <tr>
+            <th colspan="2" style="color: burlywood;">
+                Mini Calculator
+            </th>
+        </tr>
+        <tr style="color:rgb(0, 149, 255) ;">
+            <td style="text-align:center ;">
+                <h5>Addition</h5>
+                <input type="text" id="addn1" class="decor" placeholder="Enter 1st number:"> +
+                <input type="text" id="addn2" class="decor" placeholder="Enter 2nd number:">
+                <button id="add" style="color:rgb(0,149,255); background-color: aquamarine; border: 0ch;">=</button><br>
+                <p id="addans"></p>
+                <script>
+                    let add = document.getElementById("add");
+                    add.addEventListener("click", function () {
+                        var addn1 = document.getElementById('addn1').value;
+                        var addn2 = document.getElementById('addn2').value;
+                        var res = parseInt(addn1) + parseInt(addn2);
+                        document.getElementById("addans").innerHTML = res;
+                    });
+                </script>
+            </td>
+            <td style="text-align:center ;">
+                <h5>Subtraction</h5>
+                <input type="text" id="subn1" class="decor" placeholder="Enter 1st number:"> -
+                <input type="text" id="subn2" class="decor" placeholder="Enter 2nd number:">
+                <button id="sub" style="color:rgb(0,149,255); background-color: aquamarine; border: 0ch;">=</button>
+                <br>
+                <p id="subans"></p>
+
+                <script>
+                    let sub = document.getElementById("sub");
+
+                    sub.addEventListener("click", function () {
+                        var subn1 = document.getElementById('subn1').value;
+                        var subn2 = document.getElementById('subn2').value;
+                        var r = parseInt(subn1) - parseInt(subn2);
+                        document.getElementById("subans").innerHTML = r;
+                    });
+                </script>
+            </td>
+        </tr>
+        <tr style="color:rgb(0,149,255);">
+            <td style="text-align:center ;">
+                <h5>Multiplication</h5>
+                <input type="text" id="muln1" class="decor" placeholder="Enter 1st number:"> *
+                <input type="text" id="muln2" class="decor" placeholder="Enter 2nd number:">
+                <button id="multi" style="color:rgb(0,149,255); background-color: aquamarine; border:0ch;">=</button>
+                <br>
+                <p id="mulans"></p>
+
+                <script>
+                    let multi = document.getElementById("multi");
+
+                    multi.addEventListener("click", function () {
+                        var muln1 = document.getElementById("muln1").value;
+                        var muln2 = document.getElementById("muln2").value;
+                        var a = parseInt(muln1) * parseInt(muln2);
+                        document.getElementById("mulans").innerHTML = a;
+                    });
+                </script>
+            </td>
+            <td style="text-align:center ;">
+                <h5>Division</h5>
+                <input type="text" id="divn1" class="decor" placeholder="Enter 1st number:"> ÷
+                <input type="text" id="divn2" class="decor" placeholder="Enter 2nd number:">
+                <button id="divi" style="color:rgb(0,149,255); background-color: aquamarine; border: 0ch;">=</button>
+                <p id="divans"></p>
+
+                <script>
+                    let divi = document.getElementById("divi");
+
+                    divi.addEventListener("click", function () {
+                        var divn1 = document.getElementById("divn1").value;
+                        var divn2 = document.getElementById("divn2").value;
+                        var ans = parseInt(divn1) / parseInt(divn2);
+                        document.getElementById("divans").innerHTML = ans;
+                    });
+                </script>
+            </td>
+        </tr>
+    </table>
+
+    <hr style="background-color:red ;" size="3"><br>
+    <form method="get" action="https://www.youtube.com" target="_blank">
+        <button type="menu" style="color: red;">Way For YouTube</button>
+    </form>
+
+    <a href="#top" style="text-align: right;" class="move">
+        <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/48/sign-up-icon.png" alt="Go up" id="bottom"
+            height="40" class="move">
+    </a><br>
+    <p>
+        <sup>&copy;</sup>Yash Wairagade's website
+    </p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: aqua;
+    /* animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: 50; */
+}
+
+table {
+    margin: auto;
+    border-radius: 20px;
+}
+
+input {
+    background-color: #7e85e2;
+}
+
+button {
+    background-color: #7e85e2;
+}
+
+@keyframes anime {
+    0% {background-image: linear-gradient(to right, #23a91e,#ff3131,#0c0c92)}
+    30%{background-image: linear-gradient(to right,#0c0c92,#23a91e,#ff3131)}
+    60%{background-image: linear-gradient(to right,#ff3131#0c0c92,#23a91e)}
+    100%{background-image: linear-gradient(to right,#23a91e,#ff3131,#0c0c92)}
+}
